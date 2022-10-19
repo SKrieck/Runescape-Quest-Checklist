@@ -1,0 +1,44 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 10-19-2022
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-card>
+        <div class="iconDiv">
+            <lightning-icon class="color-icon" icon-name="utility:insert_template" size="large"></lightning-icon>
+        </div>
+        <div class="titleDiv">
+            <h1 slot="title">
+                Add a Quest
+            </h1>
+        </div>
+        <div>  
+            <br>
+            <hr>
+            <br>
+            <lightning-input type="text" label="Member?" onchange={handleMemberChange}></lightning-input>
+            <lightning-input type="text" label="Quest Name" onchange={handleNameChange}></lightning-input>
+            <lightning-input type="text" label="Points" onchange={handlePointsChange}></lightning-input>
+            <lightning-input type="text" label="Length" onchange={handleLengthChange}></lightning-input>
+            <lightning-input type="text" label="Requirements" onchange={handleRequireChange}></lightning-input>
+            <lightning-input type="text" label="Ironman Requirements" onchange={handleIronRequireChange}></lightning-input>
+            <lightning-input type="text" label="XP Rewards" onchange={handleXPRewardsChange}></lightning-input>
+            <lightning-input type="text" label="Item Rewards" onchange={handleItemRewardsChange}></lightning-input>
+            <lightning-input type="text" label="Access Rewards" onchange={handleAccessRewardsChange}></lightning-input>
+        </div>
+        <div class="centerButton">
+            <lightning-button variant="success"  type="button" label="Add Quest" onclick={handleAddQuest}></lightning-button>
+        </div>
+    </lightning-card>  
+
+    <lightning-card title="Runescape Quests">
+            <lightning-datatable
+                key-field={id}
+                data={questList}
+                columns={columns}>
+            </lightning-datatable>
+    </lightning-card>
+</template>

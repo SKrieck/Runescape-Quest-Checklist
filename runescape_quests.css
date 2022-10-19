@@ -1,0 +1,46 @@
+.color-icon {
+    --sds-c-icon-color-foreground-default: lightgray;
+    --sds-c-icon-color-background: steelblue;
+    padding: 5px;
+    margin-left: 10px;
+    float: left;
+}
+
+h1 {
+    color: steelblue;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+hr {
+    border-top-width: 4px;
+    border-top-style: solid;
+    border-top-color: lightgray; 
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-radius: 5px;
+    width: 98%;
+    margin: auto;
+}
+
+div {
+    margin: 20px;
+}
+
+.iconDiv {
+    float: left;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 0px;
+}
+
+.titleDiv {
+    float: left;
+    margin-left: 5px;
+}
+
+.centerButton {
+    text-align: center;
+}
